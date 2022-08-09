@@ -1,0 +1,18 @@
+{
+  "name": "jw-sharing-slides",
+  "version": "1.0.0",
+  "description": "sharing slides ...",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && nodeppt start -w",
+    "generate": "nodeppt generate src publish --all",
+    "rm-redundance": "rm -rf publish/js/mathjax .DS_Store",
+    "build": "npm run generate && npm run rm-redundance"
+  },
+  "author": "jianwuG",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "nodeppt": "1.1.0"
+  }
+}
